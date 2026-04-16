@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -49,7 +50,7 @@ export default function Home() {
       <section id="inventory" className={styles.featuredSection}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>Featured Inventory</h2>
-          <a href="#" className={styles.exploreLink}>Explore All Vehicles</a>
+          <Link href="/vehicles" className={styles.exploreLink}>Explore All Vehicles</Link>
         </div>
 
         <div className={styles.carGrid}>

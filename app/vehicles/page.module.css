@@ -1,0 +1,160 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.header {
+  padding: 2.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.backLink {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  transition: border-color 0.3s;
+}
+
+.backLink:hover {
+  border-color: #ffffff;
+}
+
+.content {
+  padding: 5rem;
+}
+
+.pageTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 0 4rem 0;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.carGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.carCard {
+  background: #f9f9f9;
+  border: 1px solid #eaeaea;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.carCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.carImageContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #eaeaea;
+}
+
+.carImage {
+  object-fit: cover;
+}
+
+.carInfo {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.carName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.carDesc {
+  color: #666;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.carPrice {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eaeaea;
+}
+
+.detailsBtn {
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.detailsBtn:hover {
+  background-color: #333;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 5rem 0;
+  font-size: 1.25rem;
+  color: #666;
+}
+
+@media (max-width: 1024px) {
+  .header, .content {
+    padding: 3rem 2rem;
+  }
+  .carGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .carGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .pageTitle {
+    font-size: 2.5rem;
+  }
+}
