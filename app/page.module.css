@@ -17,7 +17,8 @@
 
 .heroImage {
   object-fit: cover;
-  opacity: 0.6; /* Faded dark effect */
+  opacity: 0.6;
+  /* good Faded dark effect */
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -53,6 +54,8 @@
   height: auto;
   width: auto;
   max-height: 50px;
+  filter: brightness(0) invert(1);
+  /* Force black logo to white */
 }
 
 .nav {
@@ -177,7 +180,7 @@
 
 .carCard:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .carImageContainer {
@@ -358,12 +361,18 @@
   .title {
     font-size: 5rem;
   }
-  .featuredSection, .whyUsSection, .footer {
+
+  .featuredSection,
+  .whyUsSection,
+  .footer {
     padding: 4rem 2rem;
   }
-  .carGrid, .featuresGrid {
+
+  .carGrid,
+  .featuresGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .footerGrid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -375,26 +384,34 @@
     padding: 2rem;
     gap: 1.5rem;
   }
+
   .content {
     padding: 0 2rem;
     align-items: center;
     text-align: center;
   }
+
   .title {
     font-size: 3.5rem;
   }
+
   .subtitle {
     font-size: 1.125rem;
   }
+
   .sectionHeader {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
-  .carGrid, .featuresGrid, .footerGrid {
+
+  .carGrid,
+  .featuresGrid,
+  .footerGrid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
   .footerBottom {
     flex-direction: column;
     gap: 1rem;
