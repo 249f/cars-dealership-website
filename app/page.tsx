@@ -11,13 +11,22 @@ export default function Home() {
             alt="Luxury Car Showcase"
             fill
             priority
+            sizes="100vw"
             className={styles.heroImage}
           />
           <div className={styles.heroOverlay} />
         </div>
 
         <header className={styles.header}>
-          <div className={styles.logo}>ALi</div>
+          <div className={styles.logo}>
+            <Image 
+              src="/images/myLogo/MyLogo.png" 
+              alt="ALi Dealership Logo" 
+              width={100} 
+              height={57} 
+              className={styles.logoImage} 
+            />
+          </div>
           <nav className={styles.nav}>
             <a href="#" className={styles.navLink}>Home</a>
             <a href="#inventory" className={styles.navLink}>Inventory</a>
@@ -47,7 +56,13 @@ export default function Home() {
           {/* Car 1 */}
           <div className={styles.carCard}>
             <div className={styles.carImageContainer}>
-              <Image src="/car-1.png" alt="White Luxury Sports Car" fill className={styles.carImage} />
+              <Image 
+                src="/car-1.png" 
+                alt="White Luxury Sports Car" 
+                fill 
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className={styles.carImage} 
+              />
             </div>
             <div className={styles.carInfo}>
               <span className={styles.carYear}>2025</span>
@@ -64,7 +79,13 @@ export default function Home() {
           {/* Car 2 */}
           <div className={styles.carCard}>
             <div className={styles.carImageContainer}>
-              <Image src="/car-2.png" alt="Black Premium SUV" fill className={styles.carImage} />
+              <Image 
+                src="/car-2.png" 
+                alt="Black Premium SUV" 
+                fill 
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className={styles.carImage} 
+              />
             </div>
             <div className={styles.carInfo}>
               <span className={styles.carYear}>2026</span>
@@ -81,7 +102,13 @@ export default function Home() {
           {/* Car 3 */}
           <div className={styles.carCard}>
             <div className={styles.carImageContainer}>
-              <Image src="/hero-car.png" alt="Black Luxury Sports Car" fill className={styles.carImage} />
+              <Image 
+                src="/hero-car.png" 
+                alt="Black Luxury Sports Car" 
+                fill 
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className={styles.carImage} 
+              />
             </div>
             <div className={styles.carInfo}>
               <span className={styles.carYear}>2024</span>
@@ -132,7 +159,15 @@ export default function Home() {
       <footer id="contact" className={styles.footer}>
         <div className={styles.footerGrid}>
           <div>
-            <div className={styles.footerBrand}>ALi</div>
+            <div className={styles.footerBrand}>
+              <Image 
+                src="/images/myLogo/MyLogo.png" 
+                alt="ALi Dealership Logo" 
+                width={80} 
+                height={46} 
+                className={styles.logoImage} 
+              />
+            </div>
             <p className={styles.footerText}>
               The ultimate destination for luxury automotive enthusiasts.
               Elevate your driving experience today.

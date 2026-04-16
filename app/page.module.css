@@ -45,10 +45,14 @@
 }
 
 .logo {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: auto;
+  width: auto;
+  max-height: 50px;
 }
 
 .nav {
@@ -306,11 +310,9 @@
 }
 
 .footerBrand {
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .footerText {
