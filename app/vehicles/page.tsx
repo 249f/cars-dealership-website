@@ -26,7 +26,7 @@ export default async function VehiclesPage() {
 
   return (
     <div className={styles.pageContainer}>
-      <Navbar variant="solid" showFullMenu={false} />
+      <Navbar variant="solid" showFullMenu={true} />
 
       <main className={styles.content}>
         <h1 className={styles.pageTitle}>Explore Collection</h1>
