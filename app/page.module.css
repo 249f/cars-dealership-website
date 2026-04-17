@@ -32,50 +32,7 @@
   z-index: 2;
 }
 
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 2.5rem 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-  color: white;
-}
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logoImage {
-  height: auto;
-  width: auto;
-  max-height: 50px;
-  filter: brightness(0) invert(1);
-  /* Force black logo to white */
-}
-
-.nav {
-  display: flex;
-  gap: 3rem;
-}
-
-.navLink {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
-}
-
-.navLink:hover {
-  color: #a3a3a3;
-}
 
 .content {
   position: relative;
@@ -379,11 +336,7 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    padding: 2rem;
-    gap: 1.5rem;
-  }
+
 
   .content {
     padding: 0 2rem;

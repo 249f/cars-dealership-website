@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "../../components/Navbar/Navbar";
 import { supabase } from "../../lib/supabase";
 import styles from "./page.module.css";
 
@@ -25,10 +26,7 @@ export default async function VehiclesPage() {
 
   return (
     <div className={styles.pageContainer}>
-      <header className={styles.header}>
-        <div className={styles.logo}>ALi</div>
-        <Link href="/" className={styles.backLink}>← Back to Home</Link>
-      </header>
+      <Navbar variant="solid" showFullMenu={false} />
 
       <main className={styles.content}>
         <h1 className={styles.pageTitle}>Explore Collection</h1>

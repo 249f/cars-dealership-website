@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "../components/Navbar/Navbar";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -18,23 +19,7 @@ export default function Home() {
           <div className={styles.heroOverlay} />
         </div>
 
-        <header className={styles.header}>
-          <div className={styles.logo}>
-            <Image 
-              src="/images/myLogo/MyLogo.png" 
-              alt="ALi Dealership Logo" 
-              width={100} 
-              height={57} 
-              className={styles.logoImage} 
-            />
-          </div>
-          <nav className={styles.nav}>
-            <a href="#" className={styles.navLink}>Home</a>
-            <a href="#inventory" className={styles.navLink}>Inventory</a>
-            <a href="#services" className={styles.navLink}>Services</a>
-            <a href="#contact" className={styles.navLink}>Contact</a>
-          </nav>
-        </header>
+        <Navbar />
 
         <main className={styles.content}>
           <h1 className={styles.title}>ALi Dealership</h1>

@@ -4,37 +4,7 @@
   color: #000000;
 }
 
-.header {
-  padding: 2.5rem 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #eaeaea;
-  background-color: #000000;
-  color: #ffffff;
-}
 
-.logo {
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.backLink {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 4px;
-  transition: border-color 0.3s;
-}
-
-.backLink:hover {
-  border-color: #ffffff;
-}
 
 .content {
   padding: 5rem;
@@ -137,7 +107,7 @@
 }
 
 @media (max-width: 1024px) {
-  .header, .content {
+  .content {
     padding: 3rem 2rem;
   }
   .carGrid {
@@ -146,10 +116,7 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+
   .carGrid {
     grid-template-columns: 1fr;
     gap: 2rem;
