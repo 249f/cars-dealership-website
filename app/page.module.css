@@ -18,7 +18,7 @@
 .heroImage {
   object-fit: cover;
   opacity: 0.6;
-  /* good Faded dark effect */
+  /* good Faded dark effect by ai */
   transition: opacity 0.5s ease-in-out;
 }
 
